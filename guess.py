@@ -12,4 +12,25 @@ def guess(x):
             break
 
 
-guess(20)
+# guess(20)
+
+
+def mach_guess():
+    my_num=27
+    comp_guess = random.randint(1, 100)
+    while True:
+
+        if my_num<comp_guess:
+            print(f'Computer must guess lower than {comp_guess}')
+            comp_guess=random.randint(1,comp_guess)
+        elif my_num>comp_guess:
+            print(f'Computer must guess higher than {comp_guess}')
+            comp_guess=random.randint(comp_guess,100)
+        else:
+            print(f'You guessed it right, the number is indeed {my_num}')
+            break
+mach_guess()
+
+
+
+
