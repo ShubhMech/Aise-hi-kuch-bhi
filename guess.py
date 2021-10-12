@@ -9,6 +9,7 @@ def guess(x):
             print(f'Guess lower than {your_guess}')
         else:
             print(f'You guessed it right, the number is indeed {comp_guess}')
+            break
 
 
 guess(20)
